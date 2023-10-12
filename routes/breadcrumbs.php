@@ -51,3 +51,9 @@ Breadcrumbs::for('user-management.permissions.index', function (BreadcrumbTrail 
     $trail->parent('user-management.index');
     $trail->push('Permissions', route('user-management.permissions.index'));
 });
+
+// Home > Dashboard
+Breadcrumbs::for('pengurusan-prapelan.index', function (BreadcrumbTrail $trail) {
+    $trail->parent('dashboard');
+    $trail->push('Pengurusan Prapelan', route('pengurusan-prapelan.index'));
+});

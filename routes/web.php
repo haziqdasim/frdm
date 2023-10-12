@@ -30,6 +30,11 @@ Route::middleware(['auth', 'verified'])->group(function () {
         Route::resource('/user-management/permissions', PermissionManagementController::class);
     });
 
+    Route::view('/pengurusan-prapelan', 'pages.pengurusan-prapelan.index')->name('pengurusan-prapelan.index');
+    Route::view('/laporan', 'pages.laporan.index')->name('laporan.index');
+    Route::view('/log-masa', 'pages.log-masa.index')->name('log-masa.index');
+    
+
 });
 
 Route::get('/error', function () {
