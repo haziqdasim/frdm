@@ -1173,7 +1173,7 @@
 				<!--begin:Menu item-->
 				<div class="menu-item">
 					<!--begin:Menu link-->
-					<a class="menu-link" href="https://preview.keenthemes.com/html/metronic/docs/base/utilities" target="_blank" title="Check out over 200 in-house components, plugins and ready for use solutions" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-dismiss="click" data-bs-placement="right">
+					<a class="menu-link" href="https://preview.Keenthemes.com/html/metronic/docs/base/utilities" target="_blank" title="Check out over 200 in-house components, plugins and ready for use solutions" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-dismiss="click" data-bs-placement="right">
 						<span class="menu-icon">{!! getIcon('rocket', 'fs-2') !!}</span>
 						<span class="menu-title">Components</span>
 					</a>
@@ -1183,7 +1183,7 @@
 				<!--begin:Menu item-->
 				<div class="menu-item">
 					<!--begin:Menu link-->
-					<a class="menu-link" href="https://preview.keenthemes.com/html/metronic/docs" target="_blank" title="Check out the complete documentation" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-dismiss="click" data-bs-placement="right">
+					<a class="menu-link" href="https://preview.Keenthemes.com/html/metronic/docs" target="_blank" title="Check out the complete documentation" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-dismiss="click" data-bs-placement="right">
 						<span class="menu-icon">{!! getIcon('abstract-26', 'fs-2') !!}</span>
 						<span class="menu-title">Documentation</span>
 					</a>
@@ -1193,7 +1193,7 @@
 				<!--begin:Menu item-->
 				<div class="menu-item">
 					<!--begin:Menu link-->
-					<a class="menu-link" href="https://preview.keenthemes.com/laravel/metronic/docs/changelog" target="_blank">
+					<a class="menu-link" href="https://preview.Keenthemes.com/laravel/metronic/docs/changelog" target="_blank">
 						<span class="menu-icon">{!! getIcon('code', 'fs-2') !!}</span>
 						<span class="menu-title">Changelog v8.2.0</span>
 					</a>

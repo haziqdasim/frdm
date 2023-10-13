@@ -2,7 +2,7 @@
 module.exports = [
     'node_modules/datatables.net/js/jquery.dataTables.js',
     'node_modules/datatables.net-bs5/js/dataTables.bootstrap5.js',
-    'resources/_keenthemes/src/js/vendors/plugins/datatables.init.js',
+    'resources/_Keenthemes/src/js/vendors/plugins/datatables.init.js',
     'node_modules/jszip/dist/jszip.js',
     'node_modules/pdfmake/build/pdfmake.js',
     'node_modules/pdfmake/build/vfs_fonts.js',

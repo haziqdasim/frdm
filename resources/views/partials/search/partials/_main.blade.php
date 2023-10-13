@@ -117,4 +117,4 @@
 	</div>
 	<!--end::Items-->
 </div>
-<!--end::Recently viewed-->
+<!--end::Recently viewed-->

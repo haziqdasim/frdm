@@ -214,7 +214,7 @@
 						<!--end::User-->
 						<!--begin::Text-->
 						<div class="p-5 rounded bg-light-info text-dark fw-semibold mw-lg-400px text-start" data-kt-element="message-text">You can unwatch this repository immediately by clicking here: 
-						<a href="https://keenthemes.com">Keenthemes.com</a></div>
+						<a href="https://Keenthemes.com">Keenthemes.com</a></div>
 						<!--end::Text-->
 					</div>
 					<!--end::Wrapper-->

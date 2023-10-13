@@ -145,19 +145,19 @@
 				</div>
 			</div>
 			<div class="menu-item">
-				<a class="menu-link" href="https://preview.keenthemes.com/html/metronic/docs/base/utilities" target="_blank">
+				<a class="menu-link" href="https://preview.Keenthemes.com/html/metronic/docs/base/utilities" target="_blank">
 					<span class="menu-icon">{!! getIcon('rocket', 'fs-2') !!}</span>
 					<span class="menu-title">Components</span>
 				</a>
 			</div>
 			<div class="menu-item">
-				<a class="menu-link" href="https://preview.keenthemes.com/laravel/metronic/docs" target="_blank">
+				<a class="menu-link" href="https://preview.Keenthemes.com/laravel/metronic/docs" target="_blank">
 					<span class="menu-icon">{!! getIcon('abstract-26', 'fs-2') !!}</span>
 					<span class="menu-title">Documentation</span>
 				</a>
 			</div>
 			<div class="menu-item">
-				<a class="menu-link" href="https://preview.keenthemes.com/laravel/metronic/docs/changelog" target="_blank">
+				<a class="menu-link" href="https://preview.Keenthemes.com/laravel/metronic/docs/changelog" target="_blank">
 					<span class="menu-icon">{!! getIcon('code', 'fs-2') !!}</span>
 					<span class="menu-title">Changelog v8.2.0</span>
 				</a>

@@ -24,7 +24,7 @@ const args = getParameters();
 // get selected demo
 let demo = getDemos()[0];
 
-const dir = 'resources/_keenthemes/src';
+const dir = 'resources/_Keenthemes/src';
 
 mix.options({
     cssNano: {

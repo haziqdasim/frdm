@@ -1,9 +1,9 @@
 {
-    "name": "keenthemes",
+    "name": "Keenthemes",
     "version": "1.0.0",
     "author": "Keenthemes",
     "license": "ISC",
-    "homepage": "https://keenthemes.com/",
+    "homepage": "https://Keenthemes.com/",
     "description": "Packages used by yarn, npm, gulp and webpack",
     "main": "gulpfile.js",
     "type": "module",

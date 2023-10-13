@@ -119,7 +119,7 @@
                             <!--begin::Details item-->
                             <div class="fw-bold mt-5">Email</div>
                             <div class="text-gray-600">
-                                <a href="#" class="text-gray-600 text-hover-primary">info@keenthemes.com</a>
+                                <a href="#" class="text-gray-600 text-hover-primary">info@Keenthemes.com</a>
                             </div>
                             <!--begin::Details item-->
                             <!--begin::Details item-->
