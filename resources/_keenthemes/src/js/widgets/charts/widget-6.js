@@ -66,7 +66,7 @@ var KTChartsWidget6 = function () {
             legend: {
                 show: false
             },                               
-            colors: ['#3E97FF', '#F1416C', '#50CD89', '#FFC700', '#7239EA'],                                                                      
+            colors: ['#3336CC', '#F1416C', '#50CD89', '#FFC700', '#7239EA'],                                                                      
             xaxis: {
                 categories: ["ECR - 90%", "FGI - 82%", 'EOQ - 75%', 'FMG - 60%', 'PLG - 50%'],
                 labels: {
