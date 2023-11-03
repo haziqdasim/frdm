@@ -285,7 +285,8 @@
     </script>
 
     <script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC6ZUDxBCPmhXS3R5Knr_g-eScB9j0JrR4&callback=initMap"></script>
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC6ZUDxBCPmhXS3R5Knr_g-eScB9j0JrR4&callback=initMap">
+    </script>
 
 
 

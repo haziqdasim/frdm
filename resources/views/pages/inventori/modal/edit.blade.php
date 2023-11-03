@@ -55,9 +55,6 @@
                         <input type="text" class="form-control" placeholder="Masukkan nama barang" name="nama-barang" value="Hos Kebakaran">
                         <span class="text-danger error-text"></span>
                     </div>
-                     
-                    
-                    
 
                     <div class="col-md-6 fv-row mb-7">
                         <label for="" class="required form-label">Cukai Jalan Tamat</label>

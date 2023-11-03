@@ -11,7 +11,7 @@
         @include('partials/menus/_notifications-menu')
     </div> --}}
 	<div class="app-navbar-item ms-1 ms-md-4">
-		<div class="btn btn-icon btn-custom btn-icon-muted btn-active-light btn-active-color-primary w-35px h-35px position-relative" id="tambah-insiden">{!! getIcon('message-text-2', 'fs-2') !!} 
+		<div class="btn btn-icon btn-custom btn-icon-muted btn-active-light btn-active-color-primary w-35px h-35px position-relative" id="maklumat-insiden">{!! getIcon('message-text-2', 'fs-2') !!} 
 		<span class="bullet bullet-dot bg-success h-6px w-6px position-absolute translate-middle top-0 start-50 animation-blink"></span></div>
     </div>
 	{{-- <div class="app-navbar-item ms-1 ms-md-4">
