@@ -31,6 +31,8 @@ Route::middleware(['auth', 'verified'])->group(function () {
     });
 
     Route::view('/pengurusan-prapelan', 'pages.pengurusan-prapelan.index')->name('pengurusan-prapelan.index');
+    Route::view('/lori-bomba', 'pages.lori-bomba.index')->name('lori-bomba.index');
+    Route::view('/inventori', 'pages.inventori.index')->name('inventori.index');
     Route::view('/laporan', 'pages.laporan.index')->name('laporan.index');
     Route::view('/log-masa', 'pages.log-masa.index')->name('log-masa.index');
     
