@@ -130,8 +130,8 @@
                                             </svg>
                                         </span>
                                     </div>
-                                    <div class="fw-mormal timeline-content text-muted ps-3">
-                                        Outlines keep you honest. And keep structure
+                                    <div class="timeline-content d-flex">
+                                        <span class="fw-bold text-gray-800 ps-3">Balau Bomba Puchong</span>
                                     </div>
                                 </div>
                                 <div class="timeline-item">
@@ -147,7 +147,7 @@
                                         </span>
                                     </div>
                                     <div class="timeline-content d-flex">
-                                        <span class="fw-bold text-gray-800 ps-3">AEOL meeting</span>
+                                        <span class="fw-bold text-gray-800 ps-3">Head west toward Persiaran Cyber Point Selatan</span>
                                     </div>
                                 </div>
                                 <div class="timeline-item">
@@ -162,10 +162,8 @@
                                             </svg>
                                         </span>
                                     </div>
-                                    <div class="timeline-content fw-bold text-gray-800 ps-3">
-                                        Make deposit
-                                        <a href="#" class="text-primary">USD 700</a>.
-                                        to ESL
+                                    <div class="timeline-content d-flex">
+                                        <span class="fw-bold text-gray-800 ps-3">Turn left onto Persiaran Cyber Point Selatan</span>
                                     </div>
                                 </div>
                                 <div class="timeline-item">
@@ -180,8 +178,8 @@
                                             </svg>
                                         </span>
                                     </div>
-                                    <div class="timeline-content fw-mormal text-muted ps-3">
-                                        Indulging in poorly driving and keep structure keep great
+                                    <div class="timeline-content d-flex">
+                                        <span class="fw-bold text-gray-800 ps-3">Continue onto Persiaran Rimba Permai</span>
                                     </div>
                                 </div>
                                 <div class="timeline-item">
@@ -196,59 +194,24 @@
                                             </svg>
                                         </span>
                                     </div>
-                                    <div class="timeline-content fw-semibold text-gray-800 ps-3">
-                                        New order placed <a href="#" class="text-primary">#XF-2356</a>.
-                                    </div>
-                                </div>
-                                <div class="timeline-item">
-                                    <div class="timeline-label fw-bold text-gray-800 fs-6">16:50</div>
-                                    <div class="timeline-badge">
-                                        <span class="svg-icon svg-icon-warning svg-icon-2">
-                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M22 12C22 17.5 17.5 22 12 22C6.5 22 2 17.5 2 12C2 6.5 6.5 2 12 2C17.5 2 22 6.5 22 12ZM12 6C8.7 6 6 8.7 6 12C6 15.3 8.7 18 12 18C15.3 18 18 15.3 18 12C18 8.7 15.3 6 12 6Z"
-                                                    fill="currentColor" />
-                                            </svg>
-                                        </span>
-                                    </div>
-                                    <div class="timeline-content fw-mormal text-muted ps-3">
-                                        Indulging in poorly driving and keep structure keep great
-                                    </div>
-                                </div>
-                                <div class="timeline-item">
-                                    <div class="timeline-label fw-bold text-gray-800 fs-6">21:03</div>
-                                    <div class="timeline-badge">
-                                        <span class="svg-icon svg-icon-warning svg-icon-2">
-                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M22 12C22 17.5 17.5 22 12 22C6.5 22 2 17.5 2 12C2 6.5 6.5 2 12 2C17.5 2 22 6.5 22 12ZM12 6C8.7 6 6 8.7 6 12C6 15.3 8.7 18 12 18C15.3 18 18 15.3 18 12C18 8.7 15.3 6 12 6Z"
-                                                    fill="currentColor" />
-                                            </svg>
-                                        </span>
-                                    </div>
-                                    <div class="timeline-content fw-semibold text-gray-800 ps-3">
-                                        New order placed <a href="#" class="text-primary">#XF-2356</a>.
-                                    </div>
-                                </div>
-                                <div class="timeline-item">
-                                    <div class="timeline-label fw-bold text-gray-800 fs-6">10:30</div>
-                                    <div class="timeline-badge">
-                                        <span class="svg-icon svg-icon-warning svg-icon-2">
-                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M22 12C22 17.5 17.5 22 12 22C6.5 22 2 17.5 2 12C2 6.5 6.5 2 12 2C17.5 2 22 6.5 22 12ZM12 6C8.7 6 6 8.7 6 12C6 15.3 8.7 18 12 18C15.3 18 18 15.3 18 12C18 8.7 15.3 6 12 6Z"
-                                                    fill="currentColor" />
-                                            </svg>
-                                        </span>
-                                    </div>
-                                    <div class="timeline-content fw-mormal text-muted ps-3">
-                                        Finance KPI Mobile app launch preparion meeting
+                                    <div class="timeline-content d-flex">
+                                        <span class="fw-bold text-gray-800 ps-3">Continue onto Persiaran Rimba Permai</span>
                                     </div>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <h6>Jangka Masa Tiba: <span class="fw-bolder h4">03:34 PM</span></h6>
+                            <h6>Jarak: <span class="fw-bolder h4">7 Kilometer</span></h6>
+                            <h6>Tempoh Masa: <span class="fw-bolder h4">6 Minit</span></h6>
+
+                        </div>
+                        <div class="card-footer text-end p-3">
+                            <a href="#" class="btn btn-secondary btn-sm me-2">Lihat Selanjutnya</a>
+                            <a href="#" class="btn btn-light-primary btn-sm me-2">Kongsi</a>
+
                         </div>
                     </div>
                 </div>

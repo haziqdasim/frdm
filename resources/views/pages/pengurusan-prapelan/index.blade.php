@@ -19,7 +19,7 @@
             </div>
             <div class="card-toolbar">
                 <div class="d-flex flex-stack flex-wrap gap-4">
-                    <a href="#" class="btn btn-sm btn-light-primary fw-bold">Tambah Prapelan</a>
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#tambah-prapelan" class="btn btn-sm btn-light-primary fw-bold">Tambah Prapelan</a>
                 </div>
             </div>
         </div>
@@ -101,8 +101,8 @@
                                         <span class="text-gray-600 fw-bold">SEK15-42238</span>
                                     </td>
                                     <td class="text-end">
-                                        <a href="#" class="btn btn-sm btn-light fw-bold">Lihat</a>
-                                        <a href="#" class="btn btn-sm btn-light-warning fw-bold">Kemaskini</a>
+                                        <a href="#" class="btn btn-sm btn-light fw-bold">Muat Turun</a>
+                                        {{-- <a href="#" class="btn btn-sm btn-light-warning fw-bold">Kemaskini</a> --}}
                                         <a href="#" class="btn btn-sm btn-light-danger fw-bold">Padam</a>
                                     </td>
                                 </tr>
@@ -129,5 +129,7 @@
             </div>
         </div>
     </div>
+
+    @include('pages/pengurusan-prapelan/modal/create')
 
 </x-default-layout>
