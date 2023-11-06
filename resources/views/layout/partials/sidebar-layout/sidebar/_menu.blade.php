@@ -177,7 +177,7 @@
 							<span class="menu-bullet">
 								<span class="bullet bullet-dot"></span>
 							</span>
-							<span class="menu-title">Kebenaran</span>
+							<span class="menu-title">Akses</span>
 						</a>
 					</div>
 				</div>

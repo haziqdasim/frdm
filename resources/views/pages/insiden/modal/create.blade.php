@@ -14,7 +14,7 @@
                 <div class="row">
                     <div class="col-md-4">
                         <div class="col-md-12 fv-row mb-7">
-                            <label class="required fs-6 fw-semibold mb-2">Nama Barang</label>
+                            <label class="required fs-6 fw-semibold mb-2">Insiden ID</label>
                             <input type="text" class="form-control" placeholder="Masukkan nama barang" name="nama-barang">
                             <span class="text-danger error-text"></span>
                         </div>
@@ -31,7 +31,7 @@
                     </div>
                     <div class="col-md-8">
                         <div class="col-md-12 fv-row mb-7">
-                            <label class="required fs-6 fw-semibold mb-2">Jumlah Lori Bomba</label>
+                            <label class="required fs-6 fw-semibold mb-2">Lokasi</label>
                             <textarea name="maklumat-insiden" class="form-control" id="" cols="30" rows="3" placeholder="Sila masukkan alamat insiden"></textarea>
                             <span class="text-danger error-text"></span>
                         </div>
