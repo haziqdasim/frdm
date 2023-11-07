@@ -5,7 +5,7 @@
     @endsection
 
     @section('breadcrumbs')
-        {{ Breadcrumbs::render('pengurusan-prapelan.index') }}
+        {{ Breadcrumbs::render('laporan.index') }}
     @endsection
 
     <link href="{{ asset('assets/plugins/global/plugins.bundle.css') }}" rel="stylesheet" type="text/css" />

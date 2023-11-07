@@ -7,7 +7,7 @@ use Spatie\Permission\Models\Role;
 
 // Home
 Breadcrumbs::for('home', function (BreadcrumbTrail $trail) {
-    $trail->push('Home', route('dashboard'));
+    $trail->push('Laman Utama', route('dashboard'));
 });
 
 // Home > Dashboard
@@ -54,6 +54,43 @@ Breadcrumbs::for('user-management.permissions.index', function (BreadcrumbTrail 
 
 // Home > Dashboard
 Breadcrumbs::for('pengurusan-prapelan.index', function (BreadcrumbTrail $trail) {
-    $trail->parent('dashboard');
+    $trail->parent('home');
     $trail->push('Pengurusan Prapelan', route('pengurusan-prapelan.index'));
+});
+
+
+// maklumat insiden
+Breadcrumbs::for('insiden.index', function (BreadcrumbTrail $trail) {
+    $trail->parent('home');
+    $trail->push('Maklumat Insiden', route('insiden.index'));
+});
+
+// lori bomba
+Breadcrumbs::for('lori-bomba.index', function (BreadcrumbTrail $trail) {
+    $trail->parent('home');
+    $trail->push('Lori Bomba', route('lori-bomba.index'));
+});
+
+// Inventori
+Breadcrumbs::for('inventori.index', function (BreadcrumbTrail $trail) {
+    $trail->parent('home');
+    $trail->push('Inventori', route('inventori.index'));
+});
+
+// pengurusan anggota
+Breadcrumbs::for('pengurusan-anggota.index', function (BreadcrumbTrail $trail) {
+    $trail->parent('home');
+    $trail->push('Pengurusan Anggota', route('pengurusan-anggota.index'));
+});
+
+// log masa
+Breadcrumbs::for('log-masa.index', function (BreadcrumbTrail $trail) {
+    $trail->parent('home');
+    $trail->push('Log Masa', route('log-masa.index'));
+});
+
+// laporan
+Breadcrumbs::for('laporan.index', function (BreadcrumbTrail $trail) {
+    $trail->parent('home');
+    $trail->push('Laporan', route('laporan.index'));
 });
