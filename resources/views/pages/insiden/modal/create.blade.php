@@ -15,7 +15,7 @@
                     <div class="col-md-4">
                         <div class="col-md-12 fv-row mb-7">
                             <label class="required fs-6 fw-semibold mb-2">Insiden ID</label>
-                            <input type="text" class="form-control" placeholder="Masukkan nama barang" name="nama-barang">
+                            <input type="text" class="form-control" placeholder="" name="nama-barang" value="#IR379211" disabled>
                             <span class="text-danger error-text"></span>
                         </div>
                         <div class="col-md-12 fv-row mb-7">
@@ -26,6 +26,11 @@
                         <div class="col-md-12 fv-row mb-7">
                             <label class="required fs-6 fw-semibold mb-2">Maklumat Insiden</label>
                             <textarea name="maklumat-insiden" class="form-control" id="" cols="30" rows="10" placeholder="Sila masukkan maklumat insiden"></textarea>
+                            <span class="text-danger error-text"></span>
+                        </div>
+                        <div class="col-md-12 fv-row mb-7">
+                            <label class="required fs-6 fw-semibold mb-2">Anggota Bertugas</label>
+                            <input class="form-control" value="" id="anggota-bertugas"/>
                             <span class="text-danger error-text"></span>
                         </div>
                     </div>
@@ -82,3 +87,12 @@
 <script async defer
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC6ZUDxBCPmhXS3R5Knr_g-eScB9j0JrR4&callback=initMap">
     </script>
+
+
+<script>
+    // The DOM elements you wish to replace with Tagify
+var input1 = document.querySelector("#anggota-bertugas");
+
+// Initialize Tagify components on the above inputs
+new Tagify(input1);
+</script>

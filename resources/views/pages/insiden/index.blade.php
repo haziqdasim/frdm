@@ -29,7 +29,7 @@
     <div class="card card-flush mb-7">
         <div class="card-header">
             <div class="card-title">
-                <h2 class="mb-0">Insiden</h2>
+                <h2 class="mb-0">Maklumat Insiden</h2>
             </div>
             <div class="card-toolbar">
                 <div class="d-flex flex-stack flex-wrap gap-4">
