@@ -27,33 +27,25 @@
     <div class="card card-flush h-xl-100">
         <div class="card-header pt-7">
             <h3 class="card-title align-items-start flex-column">
-                <span class="card-label fw-bold text-gray-800">Negeri</span>
-                <span class="text-gray-400 mt-1 fw-semibold fs-6">Paparan prapelan mengikut negeri</span>
+                <span class="card-label fw-bold text-gray-800">Senarai</span>
+                <span class="text-gray-400 mt-1 fw-semibold fs-6">Paparan prapelan ang telah dimuatnaik</span>
             </h3>
             <div class="card-toolbar">
-                <div class="d-flex flex-stack flex-wrap gap-4">
-                    {{-- <div class="d-flex align-items-center fw-bold">
-                        <div class="text-gray-400 fs-7 me-2">Lokasi</div>
-                        <select class="form-select form-select-sm" data-control="select2" data-placeholder="Pilih lokasi">
-                            <option></option>
-                            <option value="1">Rumah</option>
-                        </select>
-                    </div>
-                    <div class="d-flex align-items-center fw-bold">
-                        <div class="text-gray-400 fs-7 me-2">Negeri</div>
-                        <select class="form-select form-select-sm" data-control="select2" data-placeholder="Pilih negeri">
-                            <option></option>
-                            <option value="1">Selangor</option>
-                            <option value="2">Melaka</option>
-                        </select>
-                    </div>
-                    <div class="d-flex align-items-center fw-bold">
-                        <div class="text-gray-400 fs-7 me-2">Bandar</div>
-                        <select class="form-select form-select-sm" data-control="select2" data-placeholder="Pilih negeri">
-                            <option></option>
-                            <option value="1">Bandar Baru Bangi</option>
-                        </select>
-                    </div> --}}
+                <div class="d-flex align-items-center fw-bold ms-5">
+                    <div class="text-gray-400 fs-7 me-2">Negeri</div>
+                    <select class="form-select form-select-sm" data-control="select2" data-placeholder="Pilih negeri">
+                        <option></option>
+                        <option value="1">Selangor</option>
+                    </select>
+                </div>
+                <div class="d-flex align-items-center fw-bold ms-5">
+                    <div class="text-gray-400 fs-7 me-2">Bandar</div>
+                    <select class="form-select form-select-sm" data-control="select2" data-placeholder="Pilih negeri">
+                        <option></option>
+                        <option value="1">Bandar Baru Bangi</option>
+                    </select>
+                </div>
+                {{-- <div class="d-flex flex-stack flex-wrap gap-4">
                     <div class="position-relative my-1">
                         <i class="ki-duotone ki-magnifier fs-2 position-absolute top-50 translate-middle-y ms-4">
                             <span class="path1"></span>
@@ -61,7 +53,7 @@
                         </i>
                         <input type="text" data-kt-table-widget-4="search" class="form-control w-200px form-control-sm ps-12" placeholder="Carian"/>
                     </div>
-                </div>
+                </div> --}}
             </div>
         </div>
         <div class="card-body pt-2">
@@ -72,10 +64,8 @@
                         <thead>
                             <tr class="text-start text-gray-400 fw-bold fs-7 text-uppercase gs-0">
                                 <th class="text-start" rowspan="1" colspan="1">Bil</th>
-                                <th class="text-center" rowspan="1" colspan="1">Negeri</th>
-                                <th class="text-center" rowspan="1" colspan="1">Bandar</th>
-                                <th class="text-center" rowspan="1" colspan="1">Poskod</th>
-                                <th class="text-center" rowspan="1" colspan="1">No Pusat Bandar</th>
+                                <th class="text-start" rowspan="1" colspan="1">Alamat</th>
+                                <th class="text-start" rowspan="1" colspan="1">Nama fail</th>
                                 <th class="text-center" rowspan="1" colspan="1">Tindakan</th>
                             </tr>
                         </thead>
@@ -87,18 +77,11 @@
                                             {{ $i }}
                                         </a>
                                     </td>
-                                    <td class="text-center">
-                                        Selangor
+                                    <td class="text-start">
+                                        C-1-2, Jalan Radius, Business Park 63000 Cyberjaya Malaysia.
                                     </td>
-                                    <td class="text-center">
-                                        <a href="#" class="text-gray-800 text-hover-primary">Bandar Baru
-                                            Bangi</a>
-                                    </td>
-                                    <td class="text-center">
-                                        43500
-                                    </td>
-                                    <td class="text-center">
-                                        <span class="text-gray-600 fw-bold">SEK15-42238</span>
+                                    <td class="text-start">
+                                        Bangunan-radius-business-park-aras-3[prapelan].pdf
                                     </td>
                                     <td class="text-end">
                                         <a href="#" class="btn btn-sm btn-light fw-bold">Muat Turun</a>

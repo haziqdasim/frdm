@@ -105,7 +105,7 @@
                                         Kampung Baharu, Kuala Lumpur.
                                     </td>
                                     <td class="text-center">
-                                        <span class="badge badge-light-success fw-semibold me-1">Selesai</span>
+                                        <span class="badge badge-light-success fw-semibold me-1" style="font-style: italic;">Arrival</span>
                                     </td>
                                     <td class="text-end">
                                         <a href="#" class="btn btn-sm btn-light fw-bold">Kemaskini</a>

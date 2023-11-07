@@ -67,7 +67,6 @@
                                 <th class="text-center" rowspan="1" colspan="1">Gambar</th>
                                 <th class="text-center" rowspan="1" colspan="1">Nama</th>
                                 <th class="text-center" rowspan="1" colspan="1">ID Barang</th>
-                                <th class="text-center" rowspan="1" colspan="1">Tarikh</th>
                                 <th class="text-center" rowspan="1" colspan="1">Status</th>
                                 <th class="text-center" rowspan="1" colspan="1">Tindakan</th>
                             </tr>
@@ -92,9 +91,6 @@
                                         <span class="badge badge-secondary fw-bolder px-5">#342523312</span>
                                     </td>
                                     <td class="text-center">
-                                        <span class="text-gray-600 fw-bold">23-02-2023</span>
-                                    </td>
-                                    <td class="text-center">
                                         <span class="badge badge-light-success">
                                         <span class="svg-icon svg-icon-success svg-icon-6 me-1">
                                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -102,10 +98,10 @@
                                                 <path d="M10.4343 12.4343L8.75 10.75C8.33579 10.3358 7.66421 10.3358 7.25 10.75C6.83579 11.1642 6.83579 11.8358 7.25 12.25L10.2929 15.2929C10.6834 15.6834 11.3166 15.6834 11.7071 15.2929L17.25 9.75C17.6642 9.33579 17.6642 8.66421 17.25 8.25C16.8358 7.83579 16.1642 7.83579 15.75 8.25L11.5657 12.4343C11.2533 12.7467 10.7467 12.7467 10.4343 12.4343Z" fill="currentColor"/>
                                             </svg>
                                         </span>
-                                        MASUK</span>
+                                        Masuk</span>
                                     </td>
                                     <td class="text-end">
-                                        {{-- <a href="#" class="btn btn-sm btn-light fw-bold">Inventori</a> --}}
+                                        <a href="#" class="btn btn-sm btn-light fw-bold" id="log-masa">Log Masa</a>
                                         <a href="#" data-bs-toggle="modal" data-bs-target="#kemaskini-barang" class="btn btn-sm btn-light-warning fw-bold">Kemaskini</a>
                                         <a href="#" class="btn btn-sm btn-light-danger fw-bold">Padam</a>
                                     </td>

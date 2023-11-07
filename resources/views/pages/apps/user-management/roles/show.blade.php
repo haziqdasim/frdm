@@ -1,7 +1,7 @@
 <x-default-layout>
 
     @section('title')
-        Roles
+        Peranan
     @endsection
 
     @section('breadcrumbs')

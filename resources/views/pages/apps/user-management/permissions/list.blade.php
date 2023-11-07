@@ -1,7 +1,7 @@
 <x-default-layout>
 
     @section('title')
-        Permissions
+        Akses
     @endsection
 
     @section('breadcrumbs')
@@ -16,7 +16,7 @@
                 <!--begin::Search-->
                 <div class="d-flex align-items-center position-relative my-1">
                     {!! getIcon('magnifier','fs-3 position-absolute ms-5') !!}
-                    <input type="text" data-kt-user-table-filter="search" class="form-control form-control-solid w-250px ps-13" placeholder="Search permission" id="mySearchInput"/>
+                    <input type="text" data-kt-user-table-filter="search" class="form-control form-control-solid w-250px ps-13" placeholder="Cari akses" id="mySearchInput"/>
                 </div>
                 <!--end::Search-->
             </div>
@@ -28,7 +28,7 @@
                 <div class="d-flex justify-content-end" data-kt-user-table-toolbar="base">
                     <button type="button" class="btn btn-light-primary" data-bs-toggle="modal" data-bs-target="#kt_modal_update_permission">
                         {!! getIcon('plus-square','fs-3', '', 'i') !!}
-                        Add Permission
+                        Tambah Akses
                     </button>
                 </div>
                 <!--end::Toolbar-->

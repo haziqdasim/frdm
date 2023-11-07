@@ -98,7 +98,7 @@
 
                                     </td>
                                     <td class="text-end">
-                                        {{-- <a href="#" class="btn btn-sm btn-light fw-bold">Inventori</a> --}}
+                                        <a href="{{ route('inventori.index') }}" class="btn btn-sm btn-light fw-bold">Inventori</a>
                                         <a href="#" data-bs-toggle="modal" data-bs-target="#kemaskini-lori" class="btn btn-sm btn-light-warning fw-bold">Kemaskini</a>
                                         <a href="#" class="btn btn-sm btn-light-danger fw-bold">Padam</a>
                                     </td>
