@@ -81,7 +81,7 @@
                                                 </a>
                                             </td>
                                             <td class="text-center">
-                                                <span class="badge badge-secondary px-5">JVE 9306</span>
+                                                <span class="badge badge-secondary px-5">JVL 930{{ $i }}</span>
                                             </td>
                                             <td class="text-center">
                                                 <img src="{{ asset('assets/media/avatars/firetruck.png') }}" class="image-input-wrapper w-60px h-60px rounded">
@@ -122,6 +122,38 @@
             </div>
         </div>
         <div class="col-sm-12 col-md-5">
+            
+            <div class="card card-flush h-xl-40 mb-7">
+                <div class="card-header">
+                    <div class="card-title">
+                        <h2 class="mb-0">Jumlah Barang</h2>
+                    </div>
+                    <div class="card-toolbar">
+                        <div class="d-flex flex-stack flex-wrap gap-4">
+                            <a href="{{ route('inventori.index') }}" class="btn btn-sm text-dark btn-light-secondary fw-bold">Lihat Senarai</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body pt-0">
+                    <div class="mb-6">
+                        <span class="fw-semibold text-gray-600 fs-6 mb-8 d-block">
+                            Paparan barang keluar masuk pada lori bomba.
+                        </span>
+                        <div class="d-flex">
+                            <div class="border border-gray-300 border-dashed rounded min-w-100px w-100 py-2 px-4 me-6 mb-3">
+                                <i class="ki-duotone ki-arrow-up fs-3 text-success me-2"><span class="path1"></span><span class="path2"></span></i>
+                                <span class="fs-1 text-gray-700 fw-bold" data-kt-countup="true" data-kt-countup-value="198">0</span>
+                                <div class="fw-semibold text-gray-500">Barang Masuk</div>
+                            </div>
+                            <div class="border border-gray-300 border-dashed rounded min-w-100px w-100 py-2 px-4 mb-3">
+                                <i class="ki-duotone ki-arrow-down fs-3 text-danger me-2"><span class="path1"></span><span class="path2"></span></i>                            
+                                <span class="fs-1 text-gray-700 fw-bold" data-kt-countup="true" data-kt-countup-value="4">0</span>
+                                <div class="fw-semibold text-gray-500">Barang Keluar</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div class="card card-flush h-xl-40 mb-7">
                 <div class="card-header">
                     <div class="card-title">
@@ -136,7 +168,7 @@
                 <div class="card-body pt-0">
                     <div id="kt_table_widget_4_table_wrapper" class="dataTables_wrapper dt-bootstrap4 no-footer">
                         <div class="table-responsive">
-                            <table class="table align-middle table-row-dashed fs-6 gy-1 dataTable no-footer"
+                            <table class="table align-middle table-row-dashed fs-6 gy-2 dataTable no-footer"
                                 id="kt_table_widget_4_table">
                                 <thead>
                                     <tr class="text-start text-gray-400 fw-bold fs-7 text-uppercase gs-0">
@@ -152,48 +184,13 @@
                                                     {{ $i }}
                                                 </a>
                                             </td>
-                                            <td class="text-center">
-                                                <div class="symbol-group symbol-hover flex-nowrap">
-                                                    <div class="symbol symbol-35px symbol-circle" data-bs-toggle="tooltip"
-                                                        aria-label="Michael Eberon" data-bs-original-title="Michael Eberon"
-                                                        data-kt-initialized="1">
-                                                        <span class="ms-2" style="font-size: smaller;">Ltt. MUHAMMAD ZULKHAIRIL BIN AHMAD KHALID</span>
-                                                    </div>
-                                                </div>
+                                            <td class="text-start">
+                                                <span style="font-size: smaller;">Ltt. MUHAMMAD ZULKHAIRIL BIN AHMAD KHALID</span>
                                             </td>
                                         </tr>
                                     @endfor
                                 </tbody>
                             </table>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="card card-flush h-xl-40 mb-7">
-                <div class="card-header">
-                    <div class="card-title">
-                        <h2 class="mb-0">Jumlah Barang</h2>
-                    </div>
-                    <div class="card-toolbar">
-                        <div class="d-flex flex-stack flex-wrap gap-4">
-                            <a href="{{ route('inventori.index') }}" class="btn btn-sm text-dark btn-light-secondary fw-bold">Lihat Senarai</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="card-body pt-0">
-                    <div class="mb-6">
-                        <span class="fw-semibold text-gray-600 fs-6 mb-8 d-block">
-                            Flat cartoony illustrations with vivid unblended colors and asymmetrical  beautiful purple hair lady
-                        </span>
-                        <div class="d-flex">
-                            <div class="border border-gray-300 border-dashed rounded min-w-100px w-100 py-2 px-4 me-6 mb-3">                                   
-                                <span class="fs-1 text-gray-700 fw-bold">198</span>
-                                <div class="fw-semibold text-gray-500">Barang Masuk</div>
-                            </div>
-                            <div class="border border-gray-300 border-dashed rounded min-w-100px w-100 py-2 px-4 mb-3">                              
-                                <span class="fs-1 text-gray-700 fw-bold">4</span>
-                                <div class="fw-semibold text-gray-500">Barang Keluar</div>
-                            </div>                           
                         </div>
                     </div>
                 </div>
