@@ -39,7 +39,7 @@
         </div>
     </div>
     <div class="row">
-        <div class="col-sm-12 col-md-7">
+        <div class="col-sm-12 col-md-8">
             <div class="card card-flush h-xl-100">
                 <div class="card-header pt-7">
                     <h3 class="card-title align-items-start flex-column">
@@ -61,7 +61,7 @@
                 <div class="card-body pt-2">
                     <div id="kt_table_widget_4_table_wrapper" class="dataTables_wrapper dt-bootstrap4 no-footer">
                         <div class="table-responsive">
-                            <table class="table align-middle table-row-dashed fs-6 gy-3 dataTable no-footer"
+                            <table class="table align-middle table-row-dashed fs-6 gy-1 dataTable no-footer"
                                 id="kt_table_widget_4_table">
                                 <thead>
                                     <tr class="text-start text-gray-400 fw-bold fs-7 text-uppercase gs-0">
@@ -121,7 +121,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-sm-12 col-md-5">
+        <div class="col-sm-12 col-md-4">
             
             <div class="card card-flush h-xl-40 mb-7">
                 <div class="card-header">
@@ -135,10 +135,7 @@
                     </div>
                 </div>
                 <div class="card-body pt-0">
-                    <div class="mb-6">
-                        <span class="fw-semibold text-gray-600 fs-6 mb-8 d-block">
-                            Paparan barang keluar masuk pada lori bomba.
-                        </span>
+                    <div class="my-0">
                         <div class="d-flex">
                             <div class="border border-gray-300 border-dashed rounded min-w-100px w-100 py-2 px-4 me-6 mb-3">
                                 <i class="ki-duotone ki-arrow-up fs-3 text-success me-2"><span class="path1"></span><span class="path2"></span></i>
@@ -151,6 +148,7 @@
                                 <div class="fw-semibold text-gray-500">Barang Keluar</div>
                             </div>
                         </div>
+                        <span class="small text-muted">Tarikh dikemaskini pada 08-11-2023</span>
                     </div>
                 </div>
             </div>
@@ -161,11 +159,11 @@
                     </div>
                     <div class="card-toolbar">
                         <div class="d-flex flex-stack flex-wrap gap-4">
-                            <a href="#" data-bs-toggle="modal" data-bs-target="#" class="btn btn-sm text-dark btn-light-secondary fw-bold">Tambah Anggota</a>
+                            <a href="{{ route('pengurusan-anggota.index') }}" class="btn btn-sm text-dark btn-light-secondary fw-bold">Lihat Senarai</a>
                         </div>
                     </div>
                 </div>
-                <div class="card-body pt-0">
+                <div class="card-body pt-0 card-scroll h-250px">
                     <div id="kt_table_widget_4_table_wrapper" class="dataTables_wrapper dt-bootstrap4 no-footer">
                         <div class="table-responsive">
                             <table class="table align-middle table-row-dashed fs-6 gy-2 dataTable no-footer"

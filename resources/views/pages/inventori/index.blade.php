@@ -59,7 +59,7 @@
         <div class="card-body pt-2">
             <div id="kt_table_widget_4_table_wrapper" class="dataTables_wrapper dt-bootstrap4 no-footer">
                 <div class="table-responsive">
-                    <table class="table align-middle table-row-dashed fs-6 gy-3 dataTable no-footer"
+                    <table class="table align-middle table-row-dashed fs-6 gy-1 dataTable no-footer"
                         id="kt_table_widget_4_table">
                         <thead>
                             <tr class="text-start text-gray-400 fw-bold fs-7 text-uppercase gs-0">
@@ -67,7 +67,7 @@
                                 <th class="text-center" rowspan="1" colspan="1">Gambar</th>
                                 <th class="text-center" rowspan="1" colspan="1">Nama</th>
                                 <th class="text-center" rowspan="1" colspan="1">ID Barang</th>
-                                <th class="text-center" rowspan="1" colspan="1">Status</th>
+                                {{-- <th class="text-center" rowspan="1" colspan="1">Status</th> --}}
                                 <th class="text-center" rowspan="1" colspan="1">Tindakan</th>
                             </tr>
                         </thead>
@@ -90,7 +90,7 @@
                                     <td class="text-center">
                                         <span class="badge badge-secondary fw-bolder px-5">#342523312</span>
                                     </td>
-                                    <td class="text-center">
+                                    {{-- <td class="text-center">
                                         <span class="badge badge-light-success">
                                         <span class="svg-icon svg-icon-success svg-icon-6 me-1">
                                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -99,7 +99,7 @@
                                             </svg>
                                         </span>
                                         Masuk</span>
-                                    </td>
+                                    </td> --}}
                                     <td class="text-end">
                                         <a href="#" class="btn btn-sm btn-light fw-bold" id="log-masa">Log Masa</a>
                                         <a href="#" data-bs-toggle="modal" data-bs-target="#kemaskini-barang" class="btn btn-sm btn-light-warning fw-bold">Kemaskini</a>

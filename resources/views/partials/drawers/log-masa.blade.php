@@ -37,15 +37,10 @@
 								<div class="overflow-auto pe-3">
 									<div class="fs-5 fw-semibold mb-2">
 										Hos kebakaran telah digunakan dalam operasi menyelamat.<br>
-										<span class="fw-bolder">ID Insiden: </span><span class="badge badge-secondary">#6623453</span>
+										{{-- <span class="fw-bolder">ID Insiden: </span><span class="badge badge-secondary">#6623453</span> --}}
 									</div>
 									<div class="d-flex align-items-center mt-1 fs-6">
-										<div class="text-muted me-2 fs-7">Telah dikemaskini pada 4:23 PM oleh</div>
-										<div class="symbol symbol-circle symbol-25px" data-bs-toggle="tooltip"
-											data-bs-boundary="window" data-bs-placement="top" aria-label="Sarjan Ismail"
-											data-bs-original-title="Alan Nilson" data-kt-initialized="1">
-											<img src="{{ asset('assets/media/avatars/300-1.jpg') }}" alt="img">
-										</div>
+										<div class="text-muted me-2 fs-7">Telah dikemaskini pada 08-11-2023, 4:23 PM</div>
 									</div>
 								</div>
 							</div>
