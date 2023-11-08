@@ -94,3 +94,11 @@ Breadcrumbs::for('laporan.index', function (BreadcrumbTrail $trail) {
     $trail->parent('home');
     $trail->push('Laporan', route('laporan.index'));
 });
+
+// balai bomba
+Breadcrumbs::for('balai-bomba.index', function (BreadcrumbTrail $trail) {
+    $trail->parent('home');
+    $trail->push('Balai Bomba', route('balai-bomba.index'));
+});
+
+
