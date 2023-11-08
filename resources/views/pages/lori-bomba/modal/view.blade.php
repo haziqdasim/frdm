@@ -58,12 +58,57 @@
                         </div>
                     </div>
                     <div class="row mb-7">
+                        <label class="col-lg-4 fw-semibold text-muted">Pemandu:
+                        </label>
+                        <div class="col-lg-8 d-flex align-items-center">
+                            <span class="badge badge-light-secondary text-dark">Ltt. ARMAN BIN RAHMAT</span>
+                        </div>
+                    </div>
+                    <div class="row mb-7">
                         <label class="col-lg-4 fw-semibold text-muted">Status:
                         </label>
                         <div class="col-lg-8 d-flex align-items-center">
                             <span class="badge badge-success">Aktif</span>
                         </div>
                     </div>
+                    <div class="row mb-7">
+                        <label class="col-lg-4 fw-semibold text-muted">Jumlah Barang:
+                        </label>
+                        <div class="col-lg-8 d-flex align-items-center">
+                            <div class="d-flex">
+                                <div class="border border-gray-300 border-dashed rounded min-w-100px w-100 py-2 px-4 me-6 mb-3">
+                                    <i class="ki-duotone ki-arrow-up fs-3 text-success me-2"><span class="path1"></span><span class="path2"></span></i>
+                                    <span class="fs-1 text-gray-700 fw-bold">198</span>
+                                    <div class="fw-semibold text-gray-500">Barang Masuk</div>
+                                </div>
+                                <div class="border border-gray-300 border-dashed rounded min-w-100px w-100 py-2 px-4 mb-3">
+                                    <i class="ki-duotone ki-arrow-down fs-3 text-danger me-2"><span class="path1"></span><span class="path2"></span></i>                            
+                                    <span class="fs-1 text-gray-700 fw-bold">4</span>
+                                    <div class="fw-semibold text-gray-500">Barang Keluar</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-7">
+                        <label class="col-lg-4 fw-semibold text-muted">Senarai Anggota:
+                        </label>
+                        <div class="col-lg-8 d-flex align-items-center">
+                            <div class="d-flex flex-column">
+                                @for ($i = 1; $i <= 6; $i++)
+                                    <li class="d-flex align-items-center py-0">
+                                        <span class="bullet me-5"></span>Ltt. Aqbal Omar
+                                    </li>
+                                @endfor
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+
+                    
                 </form>
             </div>
 

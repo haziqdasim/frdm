@@ -54,21 +54,32 @@
                             
                         </div>
                     </div>
-                     
                     
-                    
-
                     <div class="col-md-6 fv-row mb-7">
                         <label for="" class="required form-label">Cukai Jalan Tamat</label>
-                        <input class="form-control" placeholder="Pilih tarikh" id="tarikh-luput-cukai-jalan" value="23-02-2023"/>
+                        <input class="form-control" placeholder="Pilih tarikh" value="12-11-2023" id="tarikh-luput-cukai-jalan"/>
                     </div>
 
                     <div class="col-md-6 fv-row mb-7">
                         <label for="" class="required form-label">Servis seterusnya</label>
-                        <input class="form-control" placeholder="Pilih tarikh" id="servis-seterusnya" value="23-02-2023"/>
+                        <input class="form-control" placeholder="Pilih tarikh" value="12-11-2023" id="servis-seterusnya"/>
                     </div>
 
                     <div class="col-md-12 fv-row mb-7">
+                        <label class="required form-label">Menugaskan Anggota</label>
+                        <input class="form-control d-flex align-items-center" value="" placeholder="Sila pilih anggota" id="kt_tagify_users" />
+                    </div>
+                    <div class="col-md-6 fv-row mb-7">
+                        <label class="required form-label">Menugaskan Pemandu</label>
+                        <select class="form-select" data-control="select2" data-placeholder="Pilih pemandu">
+                            <option></option>
+                            <option value="1">Ltt. Aqbal Omar</option>
+                            <option value="2" selected>Ltt. Shahrizal Jaafar</option>
+                            <option value="3">Ltt. Fariq Aizul</option>
+                        </select>
+                    </div>
+
+                    <div class="col-md-6 fv-row mb-7">
                         <label class="required fs-6 fw-semibold mb-2">Status</label>
                         <select class="form-select" data-control="select2" data-placeholder="Pilih status">
                             <option></option>
@@ -90,4 +101,111 @@
 
 <script>
     $("#tarikh-luput-cukai-jalan, #servis-seterusnya").flatpickr();
+</script>
+
+<script>
+    var inputElm = document.querySelector('#kt_tagify_users');
+
+    const usersList = [
+        { value: 1, name: 'Ltt. Aqbal Omar', avatar: 'avatars/300-6.jpg', email: 'aqbal@bomba.gov.my' },
+        { value: 2, name: 'Ltt. Shahrizal Jaafar', avatar: 'avatars/300-1.jpg', email: 'sharizal@bomba.gov.my' },
+        { value: 3, name: 'Ltt. Fahmie Amzar', avatar: 'avatars/300-5.jpg', email: 'fahmie@bomba.gov.my' },
+        { value: 4, name: 'Ltt. Sulaiman', avatar: 'avatars/300-25.jpg', email: 'sulaiman@bomba.gov.my' },
+        { value: 5, name: 'Ltt. Fariq Aizul', avatar: 'avatars/300-9.jpg', email: 'fariq@bomba.gov.my' },
+        { value: 6, name: 'Ltt. Yaseen Daniel', avatar: 'avatars/300-23.jpg', email: 'yaseen@bomba.gov.my' },
+        { value: 7, name: 'Ltt. Farhan Junaidi', avatar: 'avatars/300-12.jpg', email: 'farhan@bomba.gov.my' },
+        { value: 8, name: 'Ltt. Adam Bakery', avatar: 'avatars/300-13.jpg', email: 'adam@bomba.gov.my' }
+    ];
+
+    function tagTemplate(tagData) {
+        return `
+            <tag title="${(tagData.title || tagData.email)}"
+                    contenteditable='false'
+                    spellcheck='false'
+                    tabIndex="-1"
+                    class="${this.settings.classNames.tag} ${tagData.class ? tagData.class : ""}"
+                    ${this.getAttributes(tagData)}>
+                <x title='' class='tagify__tag__removeBtn' role='button' aria-label='remove tag'></x>
+                <div class="d-flex align-items-center">
+                    <div class='tagify__tag__avatar-wrap ps-0'>
+                        <img onerror="this.style.visibility='hidden'" class="rounded-circle w-25px me-2" src="assets/media/${tagData.avatar}">
+                    </div>
+                    <span class='tagify__tag-text'>${tagData.name}</span>
+                </div>
+            </tag>
+        `
+    }
+
+    function suggestionItemTemplate(tagData) {
+        return `
+            <div ${this.getAttributes(tagData)}
+                class='tagify__dropdown__item d-flex align-items-center ${tagData.class ? tagData.class : ""}'
+                tabindex="0"
+                role="option">
+
+                ${tagData.avatar ? `
+                        <div class='tagify__dropdown__item__avatar-wrap me-2'>
+                            <img onerror="this.style.visibility='hidden'"  class="rounded-circle w-50px me-2" src="assets/media/${tagData.avatar}">
+                        </div>` : ''
+                    }
+
+                <div class="d-flex flex-column">
+                    <strong>${tagData.name}</strong>
+                    <span>${tagData.email}</span>
+                </div>
+            </div>
+        `
+    }
+
+    // initialize Tagify on the above input node reference
+    var tagify = new Tagify(inputElm, {
+        tagTextProp: 'name', // very important since a custom template is used with this property as text. allows typing a "value" or a "name" to match input with whitelist
+        enforceWhitelist: true,
+        skipInvalid: true, // do not remporarily add invalid tags
+        dropdown: {
+            closeOnSelect: false,
+            enabled: 0,
+            classname: 'users-list',
+            searchKeys: ['name', 'email']  // very important to set by which keys to search for suggesttions when typing
+        },
+        templates: {
+            tag: tagTemplate,
+            dropdownItem: suggestionItemTemplate
+        },
+        whitelist: usersList
+    })
+
+    tagify.on('dropdown:show dropdown:updated', onDropdownShow)
+    tagify.on('dropdown:select', onSelectSuggestion)
+
+    var addAllSuggestionsElm;
+
+    function onDropdownShow(e) {
+        var dropdownContentElm = e.detail.tagify.DOM.dropdown.content;
+
+        if (tagify.suggestedListItems.length > 1) {
+            addAllSuggestionsElm = getAddAllSuggestionsElm();
+
+            // insert "addAllSuggestionsElm" as the first element in the suggestions list
+            dropdownContentElm.insertBefore(addAllSuggestionsElm, dropdownContentElm.firstChild)
+        }
+    }
+
+    function onSelectSuggestion(e) {
+        if (e.detail.elm == addAllSuggestionsElm)
+            tagify.dropdown.selectAll.call(tagify);
+    }
+
+    // create a "add all" custom suggestion element every time the dropdown changes
+    function getAddAllSuggestionsElm() {
+        // suggestions items should be based on "dropdownItem" template
+        return tagify.parseTemplate('dropdownItem', [{
+            class: "addAll",
+            name: "Tambah semua",
+            email: tagify.settings.whitelist.reduce(function (remainingSuggestions, item) {
+                return tagify.isTagDuplicate(item.value) ? remainingSuggestions : remainingSuggestions + 1
+            }, 0) + " Anggota"
+        }]
+        )
+    }
 </script>

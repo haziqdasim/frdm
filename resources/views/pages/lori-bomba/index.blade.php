@@ -39,7 +39,7 @@
         </div>
     </div>
     <div class="row">
-        <div class="col-sm-12 col-md-8">
+        <div class="col-sm-12 col-md-12">
             <div class="card card-flush h-xl-100">
                 <div class="card-header pt-7">
                     <h3 class="card-title align-items-start flex-column">
@@ -68,7 +68,8 @@
                                         <th class="text-start" rowspan="1" colspan="1">Bil</th>
                                         <th class="text-start" rowspan="1" colspan="1">Nombor Pendaftaran</th>
                                         <th class="text-start" rowspan="1" colspan="1">Gambar</th>
-                                        <th class="text-start" rowspan="1" colspan="1">Status</th>
+                                        <th class="text-start" rowspan="1" colspan="1">Pemandu</th>
+                                        <th class="text-start" rowspan="1" colspan="1">Jumlah Anggota</th>
                                         <th class="text-center" rowspan="1" colspan="1">Tindakan</th>
                                     </tr>
                                 </thead>
@@ -85,14 +86,16 @@
                                             </td>
                                             <td class="text-start">
                                                 <img src="{{ asset('assets/media/avatars/firetruck.png') }}" class="image-input-wrapper w-60px h-60px rounded">
-        
                                             </td>
                                             <td class="text-start">
-                                                <span class="badge badge-light-success">Aktif</span>
-        
+                                                Ltt. Shahrizal Jaafar
+                                            </td>
+                                            <td class="text-start">
+                                                6 Orang
                                             </td>
                                             <td class="text-center">
                                                 <a href="#" data-bs-toggle="modal" data-bs-target="#lihat-lori" class="btn btn-sm btn-light fw-bold">Lihat</a>
+                                                <a href="{{ route('inventori.index') }}" class="btn btn-sm btn-light-info fw-bold">Inventori</a>
                                                 <a href="#" data-bs-toggle="modal" data-bs-target="#kemaskini-lori" class="btn btn-sm btn-light-warning fw-bold">Kemaskini</a>
                                                 <a href="#" class="btn btn-sm btn-light-danger fw-bold">Padam</a>
                                             </td>
@@ -116,79 +119,6 @@
                                                 class="next"></i></a></li>
                                 </ul>
                             </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-sm-12 col-md-4">
-            
-            <div class="card card-flush h-xl-40 mb-7">
-                <div class="card-header">
-                    <div class="card-title">
-                        <h2 class="mb-0">Jumlah Barang</h2>
-                    </div>
-                    <div class="card-toolbar">
-                        <div class="d-flex flex-stack flex-wrap gap-4">
-                            <a href="{{ route('inventori.index') }}" class="btn btn-sm text-dark btn-light-secondary fw-bold">Lihat Senarai</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="card-body pt-0">
-                    <div class="my-0">
-                        <div class="d-flex">
-                            <div class="border border-gray-300 border-dashed rounded min-w-100px w-100 py-2 px-4 me-6 mb-3">
-                                <i class="ki-duotone ki-arrow-up fs-3 text-success me-2"><span class="path1"></span><span class="path2"></span></i>
-                                <span class="fs-1 text-gray-700 fw-bold" data-kt-countup="true" data-kt-countup-value="198">0</span>
-                                <div class="fw-semibold text-gray-500">Barang Masuk</div>
-                            </div>
-                            <div class="border border-gray-300 border-dashed rounded min-w-100px w-100 py-2 px-4 mb-3">
-                                <i class="ki-duotone ki-arrow-down fs-3 text-danger me-2"><span class="path1"></span><span class="path2"></span></i>                            
-                                <span class="fs-1 text-gray-700 fw-bold" data-kt-countup="true" data-kt-countup-value="4">0</span>
-                                <div class="fw-semibold text-gray-500">Barang Keluar</div>
-                            </div>
-                        </div>
-                        <span class="small text-muted">Tarikh dikemaskini pada 08-11-2023</span>
-                    </div>
-                </div>
-            </div>
-            <div class="card card-flush h-xl-40 mb-7">
-                <div class="card-header">
-                    <div class="card-title">
-                        <h2 class="mb-0">Senarai Anggota</h2>
-                    </div>
-                    <div class="card-toolbar">
-                        <div class="d-flex flex-stack flex-wrap gap-4">
-                            <a href="{{ route('pengurusan-anggota.index') }}" class="btn btn-sm text-dark btn-light-secondary fw-bold">Lihat Senarai</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="card-body pt-0 card-scroll h-250px">
-                    <div id="kt_table_widget_4_table_wrapper" class="dataTables_wrapper dt-bootstrap4 no-footer">
-                        <div class="table-responsive">
-                            <table class="table align-middle table-row-dashed fs-6 gy-2 dataTable no-footer"
-                                id="kt_table_widget_4_table">
-                                <thead>
-                                    <tr class="text-start text-gray-400 fw-bold fs-7 text-uppercase gs-0">
-                                        <th class="text-start" rowspan="1" colspan="1">Bil</th>
-                                        <th class="text-start" rowspan="1" colspan="1">Nama pegawai</th>
-                                    </tr>
-                                </thead>
-                                <tbody class="fw-bold text-gray-600">
-                                    @for ($i = 1; $i <= 6; $i++)
-                                        <tr>
-                                            <td class="text-start">
-                                                <a href="#" class="text-gray-800 text-hover-primary" style="font-size: smaller;">
-                                                    {{ $i }}
-                                                </a>
-                                            </td>
-                                            <td class="text-start">
-                                                <span style="font-size: smaller;">Ltt. MUHAMMAD ZULKHAIRIL BIN AHMAD KHALID</span>
-                                            </td>
-                                        </tr>
-                                    @endfor
-                                </tbody>
-                            </table>
                         </div>
                     </div>
                 </div>
