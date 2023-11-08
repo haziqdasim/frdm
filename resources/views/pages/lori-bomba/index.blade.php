@@ -66,9 +66,9 @@
                                 <thead>
                                     <tr class="text-start text-gray-400 fw-bold fs-7 text-uppercase gs-0">
                                         <th class="text-start" rowspan="1" colspan="1">Bil</th>
-                                        <th class="text-center" rowspan="1" colspan="1">Nombor Pendaftaran</th>
-                                        <th class="text-center" rowspan="1" colspan="1">Gambar</th>
-                                        <th class="text-center" rowspan="1" colspan="1">Status</th>
+                                        <th class="text-start" rowspan="1" colspan="1">Nombor Pendaftaran</th>
+                                        <th class="text-start" rowspan="1" colspan="1">Gambar</th>
+                                        <th class="text-start" rowspan="1" colspan="1">Status</th>
                                         <th class="text-center" rowspan="1" colspan="1">Tindakan</th>
                                     </tr>
                                 </thead>
@@ -80,19 +80,19 @@
                                                     {{ $i }}
                                                 </a>
                                             </td>
-                                            <td class="text-center">
+                                            <td class="text-start">
                                                 <span class="badge badge-secondary px-5">JVL 930{{ $i }}</span>
                                             </td>
-                                            <td class="text-center">
+                                            <td class="text-start">
                                                 <img src="{{ asset('assets/media/avatars/firetruck.png') }}" class="image-input-wrapper w-60px h-60px rounded">
         
                                             </td>
-                                            <td class="text-center">
+                                            <td class="text-start">
                                                 <span class="badge badge-light-success">Aktif</span>
         
                                             </td>
-                                            <td class="text-end">
-                                                {{-- <a href="{{ route('inventori.index') }}" class="btn btn-sm btn-light fw-bold">Inventori</a> --}}
+                                            <td class="text-center">
+                                                <a href="#" data-bs-toggle="modal" data-bs-target="#lihat-lori" class="btn btn-sm btn-light fw-bold">Lihat</a>
                                                 <a href="#" data-bs-toggle="modal" data-bs-target="#kemaskini-lori" class="btn btn-sm btn-light-warning fw-bold">Kemaskini</a>
                                                 <a href="#" class="btn btn-sm btn-light-danger fw-bold">Padam</a>
                                             </td>
@@ -196,6 +196,7 @@
         </div>
     </div>
 
+    @include('pages/lori-bomba/modal/view')
     @include('pages/lori-bomba/modal/create')
     @include('pages/lori-bomba/modal/edit')
 
