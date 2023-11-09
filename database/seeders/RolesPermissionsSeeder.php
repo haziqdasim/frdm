@@ -15,42 +15,38 @@ class RolesPermissionsSeeder extends Seeder
     public function run(): void
     {
         $abilities = [
-            'read',
-            'write',
-            'create',
+            'Senarai',
+            'Lihat',
+            'Tambah',
+            'Kemaskini',
+            'Padam',
         ];
 
         $permissions_by_role = [
-            'administrator' => [
-                'user management',
-                'content management',
-                'financial management',
-                'reporting',
-                'payroll',
-                'disputes management',
-                'api controls',
-                'database management',
-                'repository management',
+            'superadmin' => [
+                'pengguna',
+                'insiden',
+                'prapelan',
+                'balai',
+                'lori',
+                'anggota',
+                'inventori',
+                'log masa',
+                'laporan',
             ],
-            'developer' => [
-                'api controls',
-                'database management',
-                'repository management',
+            'admin' => [
+                'insiden',
+                'prapelan',
+                'lori',
             ],
-            'analyst' => [
-                'content management',
-                'financial management',
-                'reporting',
-                'payroll',
-            ],
-            'support' => [
-                'reporting',
-            ],
-            'trial' => [
+            'pemandu bomba' => [
+                'insiden',
+                'prapelan',
+                'lori',
             ],
         ];
 
-        foreach ($permissions_by_role['administrator'] as $permission) {
+        foreach ($permissions_by_role['superadmin'] as $permission) {
             foreach ($abilities as $ability) {
                 Permission::create(['name' => $ability . ' ' . $permission]);
             }
@@ -66,7 +62,9 @@ class RolesPermissionsSeeder extends Seeder
             Role::create(['name' => $role])->syncPermissions($full_permissions_list);
         }
 
-        User::find(1)->assignRole('administrator');
-        User::find(2)->assignRole('developer');
+        User::find(1)->assignRole('superadmin');
+        User::find(2)->assignRole('admin');
+        User::find(3)->assignRole('pemandu bomba');
+
     }
 }

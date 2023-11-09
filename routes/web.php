@@ -24,11 +24,6 @@ Route::middleware(['auth', 'verified'])->group(function () {
 
     Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
 
-    Route::name('user-management.')->group(function () {
-        Route::resource('/user-management/users', UserManagementController::class);
-        Route::resource('/user-management/roles', RoleManagementController::class);
-        Route::resource('/user-management/permissions', PermissionManagementController::class);
-    });
 
     Route::view('/pengurusan-prapelan', 'pages.pengurusan-prapelan.index')->name('pengurusan-prapelan.index');
     Route::view('/insiden', 'pages.insiden.index')->name('insiden.index');
@@ -38,7 +33,7 @@ Route::middleware(['auth', 'verified'])->group(function () {
     Route::view('/laporan', 'pages.laporan.index')->name('laporan.index');
     Route::view('/log-masa', 'pages.log-masa.index')->name('log-masa.index');
     Route::view('/balai-bomba', 'pages.balai-bomba.index')->name('balai-bomba.index');
-    
+
 
 });
 

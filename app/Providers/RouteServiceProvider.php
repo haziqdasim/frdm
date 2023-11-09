@@ -45,6 +45,11 @@ class RouteServiceProvider extends ServiceProvider
             Route::middleware('api')->prefix($this::API_PREFIX.'inventory')
                 ->as('inventory.')
                 ->group(base_path('routes/api/inventory.php'));
+                Route::middleware('web')
+                ->group(base_path('routes/firemen.php'));
+
+                Route::middleware('web')
+                ->group(base_path('routes/user.php'));
         });
     }
 

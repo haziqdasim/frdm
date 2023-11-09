@@ -26,10 +26,10 @@
             <span class="w-125px text-gray-500 fw-semibold fs-7">Or with email</span>
         </div> --}}
         <div class="fv-row mb-8">
-            <input type="text" placeholder="Masukkan Alamat Emel" name="email" autocomplete="off" class="form-control bg-transparent" value="officer@gmail.com"/>
+            <input type="text" placeholder="Masukkan Alamat Emel" name="email" autocomplete="off" class="form-control bg-transparent" value=""/>
         </div>
         <div class="fv-row mb-3">
-            <input type="password" placeholder="Masukkan Katalaluan Anda" name="password" autocomplete="off" class="form-control bg-transparent" value="demo"/>
+            <input type="password" placeholder="Masukkan Katalaluan Anda" name="password" autocomplete="off" class="form-control bg-transparent" value=""/>
         </div>
         <div class="d-flex flex-stack flex-wrap gap-3 fs-base fw-semibold mb-8">
             <div></div>

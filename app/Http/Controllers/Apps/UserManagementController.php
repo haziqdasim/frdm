@@ -12,6 +12,11 @@ class UserManagementController extends Controller
     /**
      * Display a listing of the resource.
      */
+    public function __construct()
+    {
+        $this->authorizeResource(User::class, 'user');
+    }
+
     public function index(UsersDataTable $dataTable)
     {
         return $dataTable->render('pages.apps.user-management.users.list');

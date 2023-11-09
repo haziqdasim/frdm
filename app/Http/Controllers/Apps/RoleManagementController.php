@@ -12,6 +12,10 @@ class RoleManagementController extends Controller
     /**
      * Display a listing of the resource.
      */
+    public function __construct()
+    {
+        $this->authorizeResource(Role::class, 'role');
+    }
     public function index()
     {
         return view('pages.apps.user-management.roles.list');

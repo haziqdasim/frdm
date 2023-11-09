@@ -12,8 +12,8 @@ return new class extends Migration
     public function up(): void
     {
         Schema::table('users', function (Blueprint $table) {
-            $table->unsignedBigInteger('station_id')->nullable();
-            $table->unsignedBigInteger('status_id')->default(1);
+            $table->string('ic_number')->nullable();
+            $table->softDeletes();
         });
     }
 
@@ -23,8 +23,8 @@ return new class extends Migration
     public function down(): void
     {
         Schema::table('users', function (Blueprint $table) {
-            $table->dropColumn('station_id');
-            $table->dropColumn('status_id');
+            $table->dropColumn('ic_number');
+            $table->dropColumn('deleted_at');
         });
     }
 };
