@@ -56,6 +56,19 @@ class InventoryController extends Controller
         return redirect()->route('inventory.index')->with('message', 'Barang berjaya dipadam.');
     }
 
+    public function listItems()
+    {
+        $inventories = Inventory::select([
+            'id',
+            'name',
+            'firetruck_id',
+            'rfid_no',
+            'photo_path'
+        ])->get();
+
+        return response()->json($inventories);
+    }
+
     public function getItem(string $id)
     {
         $inventory = Inventory::select([
