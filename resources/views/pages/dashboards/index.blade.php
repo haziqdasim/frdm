@@ -26,8 +26,7 @@
                             <div
                                 class="col-sm-12 col-md-3 d-flex align-items-center justify-content-center justify-content-md-start">
                                 <div class="symbol symbol-70px">
-                                    <div class="symbol-label"
-                                        style="background-image:url('{{ asset('assets/media/customs/lori-bomba.jpg') }}')"></div>
+                                    <div class="symbol-label" style="background-image:url({{ image('misc/firetruck.png') }})"></div>
                                 </div>
                             </div>
                             <div class="col-sm-12 col-md-9 align-items-top justify-content-center justify-content-md-start">
@@ -45,8 +44,7 @@
                             <div
                                 class="col-sm-12 col-md-3 d-flex align-items-center justify-content-center justify-content-md-start">
                                 <div class="symbol symbol-70px">
-                                    <div class="symbol-label"
-                                        style="background-image:url('{{ asset('assets/media/customs/lori-bomba.jpg') }}')"></div>
+                                    <div class="symbol-label" style="background-image:url({{ image('misc/firetruck.png') }})"></div>
                                 </div>
                             </div>
                             <div class="col-sm-12 col-md-9 align-items-top justify-content-center justify-content-md-start">
@@ -64,8 +62,7 @@
                             <div
                                 class="col-sm-12 col-md-3 d-flex align-items-center justify-content-center justify-content-md-start">
                                 <div class="symbol symbol-70px">
-                                    <div class="symbol-label"
-                                        style="background-image:url('{{ asset('assets/media/customs/lori-bomba.jpg') }}')"></div>
+                                    <div class="symbol-label" style="background-image:url({{ image('misc/firetruck.png') }})"></div>
                                 </div>
                             </div>
                             <div class="col-sm-12 col-md-9 align-items-top justify-content-center justify-content-md-start">
@@ -80,9 +77,6 @@
             </div>
         </div>
     </div>
-
-    
-
     <div class="row">
         <div class="col-md-3">
             <div class="row">
@@ -93,7 +87,7 @@
                                 class="col-sm-12 col-md-3 d-flex align-items-center justify-content-center justify-content-md-start">
                                 <div class="symbol symbol-70px">
                                     <div class="symbol-label"
-                                        style="background-image:url('{{ asset('assets/media/customs/lori-bomba.jpg') }}')">
+                                        style="background-image:url({{ image('misc/firetruck.png') }})">
                                     </div>
                                 </div>
                             </div>
