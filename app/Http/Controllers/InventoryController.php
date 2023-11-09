@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Actions\InventoryAction;
 use App\Http\Requests\Inventory\LogItemRequest;
+use App\Http\Requests\Inventory\NewItemRequest;
 use App\Http\Requests\Inventory\RegisterRfidRequest;
 use App\Http\Requests\Inventory\StoreRequest;
 use App\Http\Requests\Inventory\UpdateRequest;
@@ -79,6 +80,11 @@ class InventoryController extends Controller
         ])->findOrfail($id);
 
         return response()->json($inventory);
+    }
+
+    public function createNewItem(NewItemRequest $request)
+    {
+        return InventoryAction::createItemWithRfid($request);
     }
 
     public function registerRfid(RegisterRfidRequest $request)

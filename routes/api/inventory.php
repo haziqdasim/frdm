@@ -8,6 +8,8 @@ Route::get('/list', [InventoryController::class, 'listItems'])->name('inventory.
 
 Route::get('/{inventory}', [InventoryController::class, 'getItem'])->name('inventory.get-item');
 
+Route::post('/create-item', [InventoryController::class, 'createNewItem'])->name('inventory.create-new-item');
+
 Route::post('/register-rfid', [InventoryController::class, 'registerRfid'])->name('inventory.register-rfid');
 
 Route::post('/log-items', [InventoryController::class, 'logItems'])->name('inventory.log-items');

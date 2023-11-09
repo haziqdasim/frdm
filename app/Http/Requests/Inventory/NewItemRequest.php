@@ -4,7 +4,7 @@ namespace App\Http\Requests\Inventory;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class LogItemRequest extends FormRequest
+class NewItemRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -22,8 +22,8 @@ class LogItemRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'items-rfid' => 'required',
-            'mode' => 'required'
+            'item-name' => 'required|max:191',
+            'rfid-no' => 'required|max:191'
         ];
     }
 }

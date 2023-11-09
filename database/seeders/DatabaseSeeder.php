@@ -18,6 +18,8 @@ class DatabaseSeeder extends Seeder
             UserStatusSeeder::class,
             UsersSeeder::class,
             RolesPermissionsSeeder::class,
+            InventoryStatusSeeder::class,
+            InventorySeeder::class
         ]);
 
         \App\Models\User::factory(10)->create();

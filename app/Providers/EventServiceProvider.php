@@ -3,6 +3,8 @@
 namespace App\Providers;
 
 use App\Models\Inventory;
+use App\Models\InventoryLog;
+use App\Observers\InventoryLogObserver;
 use App\Observers\InventoryObserver;
 use Illuminate\Auth\Events\Registered;
 use Illuminate\Auth\Listeners\SendEmailVerificationNotification;
@@ -30,6 +32,7 @@ class EventServiceProvider extends ServiceProvider
     public function boot()
     {
         Inventory::observe(InventoryObserver::class);
+        InventoryLog::observe(InventoryLogObserver::class);
     }
 
     /**

@@ -12,6 +12,10 @@ class InventoryStatus extends Model
     HasFactory,
     SoftDeletes;
 
+    const TELAH_DIMASUKKAN = 1;
+    const TELAH_DIKELUARKAN = 2;
+    const TIDAK_DIKESAN = 3;
+
     protected $fillable = [
         'description'
     ];
