@@ -1,13 +1,16 @@
 <div class="modal fade" tabindex="-1" id="tambah-barang">
     <div class="modal-dialog modal-dialog-centered mw-650px">
         <div class="modal-content">
+            <form action="{{route('inventory.store')}}" method="POST" enctype="multipart/form-data">
+                @csrf
+                @method('POST')
             <div class="modal-header">
                 <h3 class="modal-title">Tambah Barang</h3>
-                
+
                 <div class="btn btn-icon btn-sm btn-active-light-primary ms-2" data-bs-dismiss="modal" aria-label="Close">
                     <i class="ki-duotone ki-cross fs-1"><span class="path1"></span><span class="path2"></span></i>
                 </div>
-                
+
             </div>
 
             <div class="modal-body">
@@ -16,7 +19,7 @@
                         <label class="required fs-6 fw-semibold mb-2" style="vertical-align: top;">Gambar</label>
                         <div class="image-input image-input-empty" style="margin-left:10px; background-image: url(  {{ asset('/assets/media/svg/avatars/blank.svg') }}" data-kt-image-input="true">
                             <div class="image-input-wrapper w-125px h-125px"></div>
-                            
+
                             <label class="btn btn-icon btn-circle btn-color-muted btn-active-color-primary w-25px h-25px bg-body shadow" data-kt-image-input-action="change" data-bs-toggle="tooltip" data-bs-dismiss="click" aria-label="Change picture" data-bs-original-title="Change picture" data-kt-initialized="1">
                                 <i class="ki-duotone ki-pencil fs-6"><span class="path1"></span><span class="path2"></span></i>
                                     <input type="file" name="picture" accept=".png, .jpg, .jpeg">
@@ -32,7 +35,7 @@
                     </div>
                     <div class="col-md-12 fv-row mb-7">
                         <label class="required form-label">Nama Barang</label>
-                        <input class="form-control" placeholder="Sila masukkan nama" id="nama-barang"/>
+                        <input class="form-control" placeholder="Sila masukkan nama" id="nama-barang-create" name="name" />
                     </div>
                     {{-- <div class="col-md-12 fv-row mb-7">
                         <label class="required fs-6 fw-semibold mb-2">Status</label>
@@ -58,13 +61,15 @@
                         </div>
                     </div>
                 </div>
-                
+
             </div>
 
             <div class="modal-footer">
                 <button type="button" class="btn btn-light" data-bs-dismiss="modal">Tutup</button>
-                <button type="button" class="btn btn-primary">Tambah</button>
+                <button type="submit" class="btn btn-primary">Tambah</button>
             </div>
+
+        </form>
         </div>
     </div>
 </div>

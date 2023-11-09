@@ -13105,11 +13105,11 @@ url(./fonts/bootstrap-icons/bootstrap-icons.woff?1fa40e8900654d2863d011707b9fb6f
 
 @font-face {
   font-family: 'keenicons-duotone';
-  src:  url(./fonts/keenicons-duotone/keenicons-duotone.eot?eut7fk);
-  src:  url(./fonts/keenicons-duotone/keenicons-duotone.eot?eut7fk#iefix) format('embedded-opentype'),
-    url(./fonts/keenicons-duotone/keenicons-duotone.ttf?eut7fk) format('truetype'),
-    url(./fonts/keenicons-duotone/keenicons-duotone.woff?eut7fk) format('woff'),
-    url(./fonts/keenicons-duotone/keenicons-duotone.svg?eut7fk#keenicons-duotone) format('svg');
+  src:  url(./fonts/keenicons-duotone/keenicons-duotone/keenicons-duotone/keenicons-duotone.eot?eut7fk);
+  src:  url(./fonts/keenicons-duotone/keenicons-duotone/keenicons-duotone/keenicons-duotone.eot?eut7fk#iefix) format('embedded-opentype'),
+    url(./fonts/keenicons-duotone/keenicons-duotone/keenicons-duotone/keenicons-duotone.ttf?eut7fk) format('truetype'),
+    url(./fonts/keenicons-duotone/keenicons-duotone/keenicons-duotone/keenicons-duotone.woff?eut7fk) format('woff'),
+    url(./fonts/keenicons-duotone/keenicons-duotone/keenicons-duotone/keenicons-duotone.svg?eut7fk#keenicons-duotone) format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -21770,11 +21770,11 @@ font-style: normal;
 }
 @font-face {
   font-family: 'keenicons-outline';
-  src:  url(./fonts/keenicons-outline/keenicons-outline.eot?fzo4bm);
-  src:  url(./fonts/keenicons-outline/keenicons-outline.eot?fzo4bm#iefix) format('embedded-opentype'),
-    url(./fonts/keenicons-outline/keenicons-outline.ttf?fzo4bm) format('truetype'),
-    url(./fonts/keenicons-outline/keenicons-outline.woff?fzo4bm) format('woff'),
-    url(./fonts/keenicons-outline/keenicons-outline.svg?fzo4bm#keenicons-outline) format('svg');
+  src:  url(./fonts/keenicons-outline/keenicons-outline/keenicons-outline/keenicons-outline.eot?fzo4bm);
+  src:  url(./fonts/keenicons-outline/keenicons-outline/keenicons-outline/keenicons-outline.eot?fzo4bm#iefix) format('embedded-opentype'),
+    url(./fonts/keenicons-outline/keenicons-outline/keenicons-outline/keenicons-outline.ttf?fzo4bm) format('truetype'),
+    url(./fonts/keenicons-outline/keenicons-outline/keenicons-outline/keenicons-outline.woff?fzo4bm) format('woff'),
+    url(./fonts/keenicons-outline/keenicons-outline/keenicons-outline/keenicons-outline.svg?fzo4bm#keenicons-outline) format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -23517,11 +23517,11 @@ font-style: normal;
 
 @font-face {
   font-family: 'keenicons-solid';
-  src:  url(./fonts/keenicons-solid/keenicons-solid.eot?812fv7);
-  src:  url(./fonts/keenicons-solid/keenicons-solid.eot?812fv7#iefix) format('embedded-opentype'),
-    url(./fonts/keenicons-solid/keenicons-solid.ttf?812fv7) format('truetype'),
-    url(./fonts/keenicons-solid/keenicons-solid.woff?812fv7) format('woff'),
-    url(./fonts/keenicons-solid/keenicons-solid.svg?812fv7#keenicons-solid) format('svg');
+  src:  url(./fonts/keenicons-solid/keenicons-solid/keenicons-solid/keenicons-solid.eot?812fv7);
+  src:  url(./fonts/keenicons-solid/keenicons-solid/keenicons-solid/keenicons-solid.eot?812fv7#iefix) format('embedded-opentype'),
+    url(./fonts/keenicons-solid/keenicons-solid/keenicons-solid/keenicons-solid.ttf?812fv7) format('truetype'),
+    url(./fonts/keenicons-solid/keenicons-solid/keenicons-solid/keenicons-solid.woff?812fv7) format('woff'),
+    url(./fonts/keenicons-solid/keenicons-solid/keenicons-solid/keenicons-solid.svg?812fv7#keenicons-solid) format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;

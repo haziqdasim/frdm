@@ -5,26 +5,55 @@
     @endsection
 
     @section('breadcrumbs')
-        {{ Breadcrumbs::render('inventori.index') }}
+        {{ Breadcrumbs::render('inventory.index') }}
     @endsection
-    
-    <link href="{{ asset('assets/plugins/global/plugins.bundle.css') }}" rel="stylesheet" type="text/css"/>
+
+    <link href="{{ asset('assets/plugins/global/plugins.bundle.css') }}" rel="stylesheet" type="text/css" />
     <script src="{{ asset('assets/plugins/global/plugins.bundle.js') }}"></script>
 
-    <link href="{{ asset('assets/css/style.bundle.css') }}" rel="stylesheet" type="text/css"/>
+    <link href="{{ asset('assets/css/style.bundle.css') }}" rel="stylesheet" type="text/css" />
     <script src="{{ asset('assets/js/scripts.bundle.js') }}"></script>
 
     <style>
         .image-input-placeholder {
             background-image: url('{{ asset('svg/avatars/blank.svg') }}');
-            
+
         }
-    
+
         [data-bs-theme="dark"] .image-input-placeholder {
             background-image: url('{{ asset('svg/avatars/blank-dark.svg') }}');
         }
     </style>
-    
+
+    @if (session('message'))
+        <div class="alert alert-success d-flex align-items-center p-5">
+
+            <i class="ki-duotone ki-archive-tick fs-2hx text-success me-4"><span class="path1"></span><span
+                    class="path2"></span></i>
+
+            <div class="d-flex flex-column">
+
+                <span>{{ session('message') }}</span>
+
+            </div>
+
+        </div>
+    @endisset
+
+    @error('name')
+        <div class="alert alert-danger d-flex align-items-center p-5">
+
+            <i class="ki-duotone ki-cross-circle fs-2hx text-alert me-4"><span class="path1"></span><span
+                    class="path2"></span></i>
+
+            <div class="d-flex flex-column">
+
+                <span>{{ $message }}</span>
+
+            </div>
+
+        </div>
+    @enderror
 
     <div class="card card-flush mb-7">
         <div class="card-header">
@@ -33,11 +62,13 @@
             </div>
             <div class="card-toolbar">
                 <div class="d-flex flex-stack flex-wrap gap-4">
-                    <a href="#" data-bs-toggle="modal" data-bs-target="#tambah-barang" class="btn btn-sm btn-light-primary fw-bold">Tambah Barang</a>
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#tambah-barang"
+                        class="btn btn-sm btn-light-primary fw-bold">Tambah Barang</a>
                 </div>
             </div>
         </div>
     </div>
+
     <div class="card card-flush h-xl-100">
         <div class="card-header pt-7">
             <h3 class="card-title align-items-start flex-column">
@@ -51,7 +82,8 @@
                             <span class="path1"></span>
                             <span class="path2"></span>
                         </i>
-                        <input type="text" data-kt-table-widget-4="search" class="form-control w-200px form-control-sm ps-12" placeholder="Carian"/>
+                        <input type="text" data-kt-table-widget-4="search"
+                            class="form-control w-200px form-control-sm ps-12" placeholder="Carian" />
                     </div>
                 </div>
             </div>
@@ -79,11 +111,12 @@
                                             {{ $i }}
                                         </a>
                                     </td>
-                                    
+
                                     <td class="text-center">
-                                        <img src="{{ asset('assets/media/customs/hos-bomba.png') }}" class="image-input-wrapper w-60px h-60px rounded">
+                                        <img src="{{ asset('assets/media/customs/hos-bomba.png') }}"
+                                            class="image-input-wrapper w-60px h-60px rounded">
                                     </td>
-                                    
+
                                     <td class="text-center">
                                         <span class="text-gray-600 fw-bold">Hos Kebakaran</span>
                                     </td>
@@ -101,9 +134,15 @@
                                         Masuk</span>
                                     </td> --}}
                                     <td class="text-end">
-                                        <a href="#" class="btn btn-sm btn-light fw-bold" id="log-masa">Log Masa</a>
-                                        <a href="#" data-bs-toggle="modal" data-bs-target="#kemaskini-barang" class="btn btn-sm btn-light-warning fw-bold">Kemaskini</a>
-                                        <a href="#" class="btn btn-sm btn-light-danger fw-bold">Padam</a>
+                                        <a href="#" class="btn btn-sm btn-light fw-bold" id="log-masa">Log
+                                            Masa</a>
+                                        <a href="#" data-bs-toggle="modal" data-bs-target="#kemaskini-barang"
+                                            class="btn btn-sm btn-light-warning fw-bold" onclick="fetchInventoryItem(1)">Kemaskini</a>
+                                            <form class="d-inline" action="{{route('inventory.destroy', ['inventory'=>1])}}" method="POST" onsubmit="return confirm('Adakah anda pasti untuk memadam item ini?')">
+                                                @csrf
+                                                @method('DELETE')
+                                                <button type="submit" class="btn btn-sm btn-light-danger fw-bold" >Padam</button>
+                                            </form>
                                     </td>
                                 </tr>
                             @endfor
@@ -132,5 +171,9 @@
 
     @include('pages/inventori/modal/create')
     @include('pages/inventori/modal/edit')
+
+    @push('scripts')
+        <script src="{{asset('assets/js/inventories/services.js')}}"></script>
+    @endpush
 
 </x-default-layout>

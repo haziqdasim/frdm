@@ -7,5 +7,6 @@ var coreLayoutJs = glob.sync(`resources/_Keenthemes/src/js/layout/*.js`) || [];
 module.exports = [
     ...componentJs,
     ...coreLayoutJs,
-    'resources/mix/common/button-ajax.js'
+    'resources/mix/common/button-ajax.js',
+    'resources/mix/inventories/services.js'
 ];

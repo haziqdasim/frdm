@@ -72,9 +72,9 @@ Breadcrumbs::for('lori-bomba.index', function (BreadcrumbTrail $trail) {
 });
 
 // Inventori
-Breadcrumbs::for('inventori.index', function (BreadcrumbTrail $trail) {
+Breadcrumbs::for('inventory.index', function (BreadcrumbTrail $trail) {
     $trail->parent('home');
-    $trail->push('Inventori', route('inventori.index'));
+    $trail->push('Inventori', route('inventory.index'));
 });
 
 // pengurusan anggota

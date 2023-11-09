@@ -1,5 +1,7 @@
 <?php
 
+use App\Logging\DbChannel;
+use App\Logging\InventoryLogger;
 use Monolog\Handler\NullHandler;
 use Monolog\Handler\StreamHandler;
 use Monolog\Handler\SyslogUdpHandler;
@@ -117,6 +119,11 @@ return [
         'emergency' => [
             'path' => storage_path('logs/laravel.log'),
         ],
+
+        'INVENTORY_LOGS' => [
+            'driver' => 'single',
+            'path' => storage_path('logs/inventory/'.date('Ymd').'.log')
+        ]
     ],
 
 ];

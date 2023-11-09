@@ -19,6 +19,8 @@ class RouteServiceProvider extends ServiceProvider
      */
     public const HOME = '/dashboard';
 
+    protected const API_PREFIX = 'api/v1/';
+
     /**
      * Define your route model bindings, pattern filters, and other route configuration.
      *
@@ -36,8 +38,13 @@ class RouteServiceProvider extends ServiceProvider
             Route::middleware('web')
                 ->group(base_path('routes/web.php'));
 
-                Route::middleware('web')
-                ->group(base_path('routes/firemen.php'));
+            Route::middleware('web')->prefix('inventory')
+                ->as('inventory.')
+                ->group(base_path('routes/web/inventory.php'));
+
+            Route::middleware('api')->prefix($this::API_PREFIX.'inventory')
+                ->as('inventory.')
+                ->group(base_path('routes/api/inventory.php'));
         });
     }
 
