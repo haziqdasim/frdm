@@ -64,8 +64,17 @@ class InventoryController extends Controller
             'name',
             'firetruck_id',
             'rfid_no',
-            'photo_path'
-        ])->get();
+            'photo_path',
+        ])->with(['latest_log'=>function($q){
+            return $q->select([
+                'id',
+                'inventory_id',
+                'status_id',
+                'created_at'
+            ])->with(['status'=>function($q){
+                return $q->select(['id', 'description']);
+            }]);
+        }])->get();
 
         return response()->json($inventories);
     }
@@ -77,7 +86,16 @@ class InventoryController extends Controller
             'name',
             'rfid_no',
             'photo_path'
-        ])->findOrfail($id);
+        ])->with(['logs'=>function($q){
+            return $q->select([
+                'id',
+                'inventory_id',
+                'status_id',
+                'created_at'
+            ])->with(['status'=>function($q){
+                return $q->select(['id', 'description']);
+            }]);
+        }])->findOrfail($id);
 
         return response()->json($inventory);
     }
